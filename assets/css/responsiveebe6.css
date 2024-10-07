@@ -1,0 +1,613 @@
+
+
+@media screen and (max-width: 1720px) {
+
+	section.header .navbar > .container:before {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1407px) {
+
+	#home section.hero .hero-body:before {
+		left: calc(50% - 544px);
+	}
+
+}
+
+@media screen and (max-width: 1220px) {
+
+	section .inline-options {
+		display: block;
+	}
+	section .inline-options .inline-option:not(:last-child) {
+		margin-bottom: .5rem;
+	}
+
+}
+
+@media screen and (max-width: 1215px) {
+
+	section.account .table td.p-4,
+	section.account .table th.p-4 {
+		padding: .5em .75em !important;
+	}
+
+	#home section.hero .hero-body:before {
+	    left: calc(50% - 480px);
+	}
+
+	.navbar-item .button {
+		padding-left: 1.2rem;
+		padding-right: 1.2rem;
+	}
+	section.header .navbar-start nav > ul > li {
+		margin-left: 0;
+	}
+	section.header .navbar-end nav > ul > li {
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+
+	section.account aside+.column {
+		width: 60%;
+	}
+
+}
+
+@media screen and (max-width: 1055px) {
+
+	section.block_type_featured_meals .owl-carousel .owl-prev,
+	section.block_type_featured_meals .owl-carousel .owl-next {
+		width: 42px;
+		height: 42px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: #f0d201d4;
+		color: #fff;
+	}
+	section.block_type_featured_meals .owl-carousel .owl-prev svg,
+	section.block_type_featured_meals .owl-carousel .owl-next svg {
+		height: 1.7rem !important;
+	}
+	section.block_type_featured_meals .owl-carousel .owl-prev {
+	  left: -1rem;
+	  padding: 0;
+	}
+	section.block_type_featured_meals .owl-carousel .owl-next {
+	  right: -1rem;
+	  padding: 0;
+	}
+
+}
+@media screen and (max-width: 1023px) {
+
+	section.hero h1 {
+		font-size: 4.3rem;
+	}
+	section.modal h2 {
+		font-size: 2rem;
+	}
+
+	#home section.hero .block_image {
+		right: 0px;
+	}
+	#home section.hero p:last-child {
+		white-space: initial;
+	}
+	#home section.hero p:last-child a.button {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	section.account > .container > .columns {
+		display: block;
+	}
+	section.account aside .menu-box,
+	section.account > .container > .columns > .column {
+		width: 100%;
+	}
+    section.account aside .menu-box {
+    	width: 100%;
+    	padding: 1.2rem 1.5rem;
+    }
+    section.account aside .menu-box:before {
+    	content: 'Menu';
+    	font-size: 1.2rem;
+    	color: #fff;
+    	display: block;
+    }
+    section.account aside .menu-box:after {
+    	position: absolute;
+    	top: 1.2rem;
+    	right: 1.5rem;
+    	display: inline-block;
+    	font-style: normal;
+    	font-variant: normal;
+    	text-rendering: auto;
+    	-webkit-font-smoothing: antialiased;
+    	font-family: "Font Awesome 5 Pro";
+    	content: "\2b";
+    	color: #fff;
+    	font-size: 1.8rem;
+    }
+    section.account aside .menu-box .menu-list {
+	    max-height: 0;
+	    overflow: hidden;
+		  transition: height 1s ease;
+    }
+    section.account aside .menu-box:hover .menu-list {
+    	max-height: 1000px;
+    }
+    section.account aside .menu-box .menu-list li:first-child {
+    	margin-top: .8rem;
+    }
+    section.account aside .menu-box .menu-list a {
+    	padding-left: 0;
+    	padding-right: 0;
+    }
+
+	#home section.hero .hero-body:before {
+	    left: 20px;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+/*	#home section.uspoints {
+		height: auto;
+		margin-top: 0;
+	}
+	#home section.hero {
+		padding-bottom: 0;
+	}
+	section.uspoints {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	section.uspoints ul li p {
+	    width: 120px;
+	}*/
+
+}
+
+@media screen and (max-width: 900px) {
+
+	section.hero.is-small .hero-body {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+
+	section.header .navbar-start,
+	section.header nav {
+		display: none;
+	}
+	.navbar-burger {
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+
+	section.account .form-section > .columns {
+		display: block;
+	}
+	section.account .form-section .form-section-title {
+		width: 100% !important;
+	}
+	section.account .form-section .form-section-title h4 {
+		margin-bottom: 0 !important;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.navbar-item img {
+    	max-height: 2.6rem;
+    }
+
+	section.block_type_meal {
+		padding-top: 1.8rem !important;
+		padding-bottom: 1.8rem !important;
+	}
+	.section {
+		padding-top: 4.5rem;
+		padding-bottom: 4.5rem;
+	}
+
+	.content h1, h1.title { font-size: 51pt; }
+	.content h2, h2.title {font-size: 37pt;}
+	.content h3, h3.title { font-size: 27pt; }
+	.content h4, h4.title { font-size: 17pt; }
+	.content p {
+		font-size: 16px;
+	}
+	section.mobflip .columns,
+	.columns.mobflip {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.block_type_image_text .block_image,
+	.block_type_text_image .block_image {
+		margin-bottom: 20px;
+	}
+
+	.owl-carousel .owl-controls .owl-prev {
+		left: -40px;
+	}
+	.owl-carousel .owl-controls .owl-next {
+		right: -40px;
+	}
+
+
+	section.hero .title.is-1,
+	section.hero h1 {
+	    font-size: 3.3rem;
+	}
+	section.hero p {
+		font-size: 16px;
+	}
+
+	.modal p img {
+		display: none;
+	}
+	.modal .fields,
+	.modal .content {
+		margin-bottom: 0;
+	}
+
+	#home section.hero .inner {
+    	width: 400px;
+    }
+
+    section.block_type_goals .options {
+    	gap: 3rem !important;
+    }
+
+    section.block_type_testimonials_slider .testimonial_slide .image:after {
+		bottom: 10px;
+		right: 34px;
+		max-width: 220px;
+		max-height: 220px;
+    }
+
+    section.footer {
+    	text-align: center;
+    }
+    section.footer .footer-top .container {
+    	background: none;
+    	padding-bottom: 1rem !important;
+    }
+    section.footer .footer-cols {
+    	flex-wrap: wrap;
+    }
+    section.footer .footer-cols .footer-col {
+    	width: 50%;
+    	margin-bottom: 1.2rem;
+    }
+    section.footer .footer-cols .footer-col:last-child {
+    	width: 100%;
+    }
+    section.footer .copyright {
+    	text-align: center;
+    }
+    section.footer .copyright .socials {
+    	margin-top: 1rem;
+    }
+
+    section .inline-options .inline-option {
+    	flex-direction: column;
+    	text-align: center;
+    }
+    section .inline-options .inline-option .inline-value:first-child {
+		/*border-radius: 20px 20px 0 0;*/
+		padding-left: 1.2rem;
+    }
+    section .inline-options .inline-option .inline-value:last-child {
+		/*border-radius: 0 0 20px 20px;*/
+		padding-right: 1.2rem;
+    }
+
+    section .inline-options .inline-option {
+    	border-radius: 20px 20px 20px 20px;
+    	overflow: hidden;
+    	position: relative;
+    }
+    section .inline-options .inline-option:after {
+    	position: absolute;
+    	top: 10px;
+    	right: 1.2rem;
+    	display: inline-block;
+    	font-style: normal;
+    	font-variant: normal;
+    	text-rendering: auto;
+    	-webkit-font-smoothing: antialiased;
+    	font-family: "Font Awesome 5 Pro";
+    	content: "\f078";
+    	color: #fff;
+    	font-size: 1.1rem;
+    }
+    section .inline-options .inline-option .inline-value {
+    	width: 100%;
+    	display: none;
+    	border-radius: 0 !important;
+    	text-align: left;
+    }
+    section .inline-options .inline-option .inline-value.is-active,
+    section .inline-options .inline-option.open .inline-value {
+    	display: block;
+    }
+    section .inline-options .inline-option .inline-value.is-active {
+    	order: -1;
+    }
+
+    #order-success {
+    	padding: 20px !important;
+    }
+    #order-success p+p {
+    	width: 100% !important;
+    	margin-top: 1rem !important;
+    }
+
+	section.account .form-section .form-section-title h4 {
+		margin-bottom: 0 !important;
+	}
+    section.account > .container > .columns {
+    }
+
+    section.account table:not(.no-responsive) thead {
+    	display: none;
+    }
+    section.account table:not(.no-responsive),
+    section.account table:not(.no-responsive) tbody,
+    section.account table:not(.no-responsive) tr,
+    section.account table:not(.no-responsive) tr th,
+    section.account table:not(.no-responsive) tr td {
+    	display: block;
+    }
+    section.account table:not(.no-responsive) tr {
+    	padding-top: 1rem;
+    	padding-bottom: 1rem;
+    }
+    section.account table:not(.no-responsive) tr td {
+    	text-align: right;
+    	display: flex;
+    	align-items: flex-start;
+    	justify-content: space-between;
+    }
+    section.account table:not(.no-responsive) tr td:before {
+    	max-width: 120px;
+    	content: attr(data-label);
+    	font-weight: 600;
+    	text-align: left;
+    }
+
+    body.minimal .logo {
+    	height: 4rem;
+    }
+    .box {
+    	padding: 1.5rem;
+    }
+    body.minimal .title.is-1 {
+	    font-size: 3rem;
+	}
+	section.login .box {
+		margin-top: 2rem;
+	}
+	section.login h2 strong:after, section.login h1 strong:after {
+	    height: 7px;
+	    bottom: -4px;
+	}
+
+	#home section.uspoints {
+	    margin-top: -58px;
+	    height: 58px;
+	}
+
+	section.block_type_cta a.cta {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	section.block_type_cta a.cta .block_image {
+		width: 100px;
+		flex-shrink: 0;
+		margin-right: 1.5rem;
+	}
+	section.block_type_cta a.cta .cta_inner {
+		flex-grow: 1;
+		width: 100%;
+		text-align: left;
+	}
+	section.block_type_cta a.cta .cta_inner p {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+
+	#home section.hero .title.is-1,
+	#home section.hero h1,
+	#home section.hero p {
+		width: 100%;
+	}
+	section.block_id_1 .hero-body .container:after {
+		display: none;
+	}
+	section.cta h2 {
+	    font-size: 2.4em;
+	}
+	section.block_id_5 img {
+		height: 60px;
+		object-fit: contain;
+	}
+
+	.modal .modal-content {
+		padding: 1.3rem !important;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	.section {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	section.hero .hero-body {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.navbar-brand .navbar-item {
+	    max-width: calc(100% - 50px);
+	}
+
+	.fields .field.field_id_1, .fields .field.field_id_2 {
+		width: 100%;
+	}
+
+	.announcer p {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	.announcer .socials {
+		display: none;
+	}
+
+	/*section.header .navbar {
+		padding-top: 1rem !important;
+		padding-bottom: 1rem !important;
+	}*/
+
+	section.block_type_pricing ul li {
+		align-items: flex-start !important;
+	}
+	section.block_type_pricing ul li svg {
+		margin-top: 2px;
+	}
+
+	section.block_type_meal h1 {
+		font-size: 2.1rem !important;
+	}
+
+	.footer {
+		text-align: center;
+	}
+	.footer .copyright,
+	.footer .copyright small {
+		display: block !important;
+		text-align: center;
+	}
+	.footer .copyright small+small {
+		margin-top: 14px;
+	}
+
+	section h2 strong:after, section h1 strong:after {
+		background-size: 200px auto;
+	}
+
+	body#account section.account .account-box, body#account section.account aside+.column .has-background-white {
+		padding: 1.5rem !important;
+	}
+	body#account section.block_id_11 {
+		padding-top: 2rem;
+		padding-bottom: 1.4rem;
+	}
+	body#account section.block_id_11 .content h1,
+	body#account section.block_id_11 h1.title {
+	    font-size: 41pt;
+	}
+	section.account aside .menu-box {
+		padding: 1rem 1.5rem;
+	}
+	section.account aside .menu-box:after {
+		top: 1rem;
+	}
+
+	#referral-code-box {
+		font-size: 32px !important;
+	}
+	#referral-code-box+p br {
+		display: none !important;
+	}
+
+	.vue-modal {
+		padding: 24px !important;
+	}
+	.vue-modal .buttons .button {
+		height: 2.5rem;
+		padding: 1rem 1.2rem !important;
+    	font-size: 1rem;
+	}
+
+
+	section.mobile_hero {
+	  display: block;
+	}
+	section.mobile_hero .hero .hero-body {
+		padding-top: 9.5rem;
+		padding-bottom: 6.5rem;
+	}
+	section.desktop_hero {
+	  display: none;
+	}
+
+
+	#home section.hero .hero-body:before {
+	    left: 20px;
+	    right: 20px;
+	    z-index: 99;
+	    background-position: center center;
+	    width: auto;
+	}
+
+}
+
+@media screen and (max-width: 460px) {
+
+	section.block_type_meal .box.p-7 {
+		padding: 1.25rem!important;
+	}
+	section.block_type_meal .product-details .detail.nutrition table td.hide-sm {
+		display: none;
+	}
+	section.block_type_meal .product-details .detail.nutrition table td[data-label] {
+		text-align: left !important;
+		padding-top: 0.7em;
+		padding-bottom: 0.7em;
+		padding-left: 0;
+	}
+	section.block_type_meal .product-details .detail.nutrition table td[data-label]:before {
+		content: attr(data-label);
+		display: block;
+	    margin-bottom: 0.1rem;
+	    font-weight: 600;
+	}
+
+	section.block_type_cta a.cta .cta_inner p {
+		font-size: .9rem;
+	}
+
+}
+

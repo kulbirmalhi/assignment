@@ -1,0 +1,1636 @@
+html.show-summary {
+	overflow: hidden;
+}
+.content h1, h1.title, .content h2, h2.title, .content h3, h3.title, .content h4, h4.title, .title {
+	/* color: #81b642; */
+}
+
+#order {
+	overflow: hidden !important;
+}
+#order,
+#order main {
+    background: #e7f1d9;
+}
+
+body.paging .iScrollVerticalScrollbar {
+	opacity: 0 !important;
+}
+
+section.utility {
+	background-color: #fff;
+	/*padding: 1rem 1rem;*/
+}
+section.utility .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+section.utility .logo {
+	height: 2rem;
+	z-index: 2;
+	width: 5rem;
+}
+section.utility .logo img {
+	max-height: 100%;
+}
+section.utility .rating {
+	height: 2rem;
+}
+section.utility .rating img {
+	max-height: 100%;
+}
+
+section.notice p {
+	white-space: nowrap;
+	font-weight: 500;
+}
+section.notice p strong {
+	color: #efd101;
+}
+
+.iScrollIndicator {
+	opacity: 0;
+}
+
+/**** Summary ****/
+#order .summary {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .2s ease;
+}
+#order .summary .summary-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* height: 100vh; */
+	background: #efd10136;
+	cursor: pointer;
+	transition: opacity .2s ease;
+	/* filter: blur(1px); */
+	/* backdrop-filter: blur(1px); */
+}
+#order .summary .summary-content {
+	position: relative;
+	left: 100%;
+	width: 400px;
+	height: 100vh;
+	padding: 2rem;
+	background-color: #fff;
+	transition: left .2s ease;
+}
+#order .summary .summary-content .title {
+	text-align: center;
+}
+#order .summary .summary-content .details {
+	margin-top: 2.4rem;
+}
+#order .summary .summary-content .details p {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 1.2rem;
+	font-size: 1.1rem;
+}
+#order .summary .summary-content .details p.total {
+	font-size: 1.3rem;
+}
+
+html.show-summary #order .summary {
+	pointer-events: all;
+	opacity: 1;
+}
+html.show-summary #order .summary .summary-content {
+	left: calc(100% - 400px);
+}
+
+/**** Cart Button ****/
+#order .cart {
+/*	position: fixed;
+	top: 1rem;
+	right: 1rem;*/
+	height: 2.6rem;
+	width: 2.6rem;
+	background-color: #81b642;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 30;
+	border-radius: 50%;
+position: relative;}
+#order .cart .count {
+	position: absolute;
+	bottom: -5px;
+	left: -5px;
+	width: 20px;
+	height: 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #efd101;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 0.7rem;
+	font-weight: 700;
+}
+#order .cart svg path {
+    fill: #ffffff;
+}
+
+/**** Page Arrows ****/
+.fp-controlArrow.fp-next {
+	/*display: none !important;*/
+}
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+	border: none;
+	width: auto;
+	height: auto;
+	transform: none !important;
+}
+.fp-controlArrow.fp-next:before,
+.fp-controlArrow.fp-prev:before {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f053";
+	font-weight: 500;
+	font-size: 2rem;
+	color: #81b642;
+	opacity: 0.5;
+	transition: opacity .2s ease;
+}
+.fp-controlArrow.fp-next:before {
+	content: "\f105";
+}
+.fp-controlArrow.fp-next:hover:before,
+.fp-controlArrow.fp-prev:hover:before {
+	opacity: 1;
+}
+
+/**** Questions ****/
+section.questions {
+	/*min-height: 100vh;*/
+	/*padding: 2rem;*/
+	/*display: flex;*/
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	background: #e7f1d9;
+	/*padding-top: 5rem;*/
+	/* background: linear-gradient(180deg, #fafefb, #eff8f0); */
+}
+section.questions .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+section.questions .wave:before {
+	width: 100%;
+	height: 24vh;
+	background: #eff8f0;
+	content: '';
+	display: block;
+}
+section.questions .wave svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 87px;
+}
+
+section.questions .wave .shape-fill {
+    fill: #eff8f0;
+}
+section.questions .question {
+	/*min-height: 60vh;*/
+	/*display: none;*/
+}
+section.questions .question .question-inner {
+	/*margin-top: 1rem;*/
+	margin-bottom: 2.5rem;
+	/*padding-bottom: 8rem;*/
+}
+section.questions .question .question-inner:last-child {
+	margin-bottom: 0;
+}
+/*section.questions .question .question-inner:after {
+	display: block;
+	height: 15rem;
+	width: 100%;
+	content: '';
+}*/
+/*section.questions .question.active {
+	display: block;
+}*/
+section.questions .question .head {
+	text-align: center;
+}
+section.questions .question .head.mt-24 {
+	margin-top: 3.5rem !important;
+}
+section.questions .question .head .title {
+	color: #2f2f2f;
+	line-height: 0.8;
+	margin-bottom: 1.8rem;
+}
+section.questions .question .head .subtitle {
+	/*width: 500px;*/
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+font-size: 0.9rem;line-height: 1.5;}
+section.questions .question .actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2.5rem;
+}
+section.questions .question .actions [data-next] {
+	margin-left: auto;
+}
+section.questions .question .options {
+	display: flex;
+	/*align-items: flex-start;*/
+	gap: 3rem 2rem;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+section.questions .question[data-question="5"] .options {
+	gap: 1.5rem 2rem;
+}
+section.questions .question .options .subhead {
+	width: 100%;
+	/* text-align: center; */
+	/*margin-bottom: -0.7rem;*/
+}
+section.questions .question .options .subhead .title {
+	font-size: 1.8rem;
+}
+section.questions.order .question .option,
+section.questions .question .options .option {
+	padding: 0;
+	width: calc(33.333% - 1.33333rem);
+	max-width: 48%;
+	background: #ffffff;
+	position: relative;
+	border-radius: 8px;
+	flex-shrink: 0;
+	flex-grow: 1;
+	/* margin-bottom: 1.2rem; */
+	transition: transform .2s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	min-height: 200px;
+	border: 2px solid white !important;
+	transition: border 0.2s ease-in, background 0.2s ease-in !important;
+}
+section.questions .question .options .option.half {
+	width: 48%;
+}
+section.questions .question .options .option .inner {
+	padding: 1.5rem 1.7rem 2.5rem 1.7rem;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	height: 100%;
+}
+section.questions .question .options .option .ribbon {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	top: calc(100% + 5px) !important;
+	font-weight: 500;
+}
+section.questions .question .options .option .ribbon .rinner {
+	background: #efd101;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	font-size: 0.7rem;
+	padding: 0.4rem 0;
+	/*transform-origin: left top;*/
+	transform: rotate(45deg);
+	width: 200%;
+	display: block;
+	flex-shrink: 0;
+	top: -11px;
+	right: -11px;
+	position: relative;
+}
+section.questions .question .options .option .title {
+	font-family: 'Poppins';
+	font-size: 1.4rem;
+}
+section.questions .question .options .title .ticon {
+	height: 24px;
+	display: inline-block;
+	margin-right: 10px;
+	/*	margin-bottom: -11px;*/
+}
+section.questions .question .options .title .ticon img {
+	max-height: 100%;
+	display: block;
+}
+section.questions .question .options .subhead .title .ticon {
+	height: 39px;
+	margin-bottom: -9px;
+}
+section.questions .question .options .option .image {
+	/* margin-bottom: 1rem; */
+	/* border-radius: 50%; */
+	overflow: hidden;
+	flex-shrink: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+}
+section.questions .question .options .option .image img {
+	display: block;
+	height: 100%;
+	max-height: 200px;
+}
+section.questions .question .options .option .image .tag {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+}
+section.questions .question .options .option .content {
+	/* opacity: .7; */
+	margin-bottom: auto;
+}
+section.questions .question .options .option .content p {
+	font-size: 0.9rem;
+}
+section.questions .question .options .option .content > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+section.questions .question .options .option .sub {
+	/* margin-top: auto; */
+	padding-top: 0.4rem;
+	font-weight: 600;
+}
+section.questions .question .options .option .content+.sub {
+	padding-top: 1.4rem;
+}
+section.questions .question .options .option .sub li {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 0.8rem;
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+section.questions .question .options .option .sub li:first-child {
+	font-weight: 600;
+}
+section.questions .question .options .option .sub li:before {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	content: '';
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/emblem.svg');
+	width: 18px;
+	height: 18px;
+}
+section.questions .question .options .option .action {
+	position: absolute;
+	bottom: -1.5rem;
+	text-align: center;
+	left: 2rem;
+	right: 2rem;
+	/* margin-top: auto; */
+	padding-top: 1.7rem;
+	}
+section.questions .question .options .option .action .button {
+	width: 230px;
+	max-width: 100%;
+}
+section.questions .question .options .option .action .button[data-toggle] {
+    transition: none !important;
+}
+
+section.questions .question .options .option:hover {
+	transform: scale(1.02);
+}
+
+section.questions.order .question .options .option:hover,
+section.questions .question .options .option.active {
+	background: #fffbd8;
+    border: 2px solid #80b641 !important;
+}
+/*section.questions .question .options .option:hover .action .button,*/
+section.questions .question .options .option.active .action .button {
+	background-color: #efd101;
+	box-shadow: 0 0 0 0.125em #efd10140;
+}
+section.questions .question .options .option.active .action .button[data-toggle] {
+	font-size: 0;
+}
+section.questions .question .options .option.active .action .button[data-toggle]:after {
+	content: 'Selected';
+	font-size: 20px;
+}
+
+section.questions .question .form {
+	width: 600px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+section.questions .question .form fieldset {
+	padding: 2rem;
+	background: #ffffff;
+	position: relative;
+	border-radius: 5px;
+	margin-bottom: 1.2rem;
+}
+
+/**** Inline ****/
+section.questions .question .options.inline {
+	gap: 0.1rem;
+	margin-bottom: 1.4rem;
+}
+section.questions .question .options.inline .option {
+	width: 150px;
+	text-align: center;
+	max-width: 130px;
+	padding: 1.1rem;
+	background: #ffffff;
+	border-radius: 4px;
+	min-height: 0;
+	cursor: pointer;
+}
+section.questions .question .options.inline .option.active {
+	background: #efd101;
+	/*transform: scale(1.1);*/
+}
+section.questions .question .options.inline .option .title {
+	font-size: 0.9rem;
+	font-family: 'Poppins',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+section.questions .question .options.inline .option.active .title {
+	color: #fff;
+	/*transform: scale(0.9);*/
+	/* font-family: 'Poppins',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+}
+section.questions .question .options.inline .option:not(:first-child) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+section.questions .question .options.inline .option:not(:last-child) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+section.questions .question .options.inline .option:first-child {
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+section.questions .question .options.inline .option:last-child {
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+/**** Meals ****/
+section.questions .question .options .option.inline {
+	/*margin-top: 6rem;*/
+	flex-grow: 0;
+	padding: 0;
+	flex-direction: row;
+	justify-content: space-between;
+	min-height: 0;
+	/* overflow: hidden; */
+	/* margin-bottom: 1rem; */
+}
+section.questions .question .options .option.inline .image {
+	/*margin-top: -8rem;*/
+	border-radius: 5px 0 0 5px;
+	height: 100%;
+	width: 45%;
+	flex-shrink: 0;
+}
+section.questions .question .options .option.inline .image img {
+	min-height: 100%;
+}
+section.questions .question .options .option.inline .details {
+	padding: 1rem;
+}
+section.questions .question .options .option.inline:not(.addon) .details .title {
+	font-size: 1rem;
+	color: #111;
+	font-weight: 600;
+}
+
+section.questions .question .options .option.inline.addon .details {
+	padding-bottom: 1.9rem;
+}
+section.questions .question .options .option.inline.addon .action {
+	left: 45%;
+	right: 0;
+	padding: 0;
+	bottom: -1.3rem;
+}
+section.questions .question .options .option.inline.addon .action .button {
+    width: 170px;
+    /*font-size: 16px;*/
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    height: 2.6rem;
+}
+
+.steps {
+	/*padding: 1.6rem 0 1rem 0;*/
+	position: relative;
+}
+.steps .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 2%;
+}
+.steps .step {
+	flex-grow: 1;
+	padding-bottom: 1rem;
+	text-align: center;
+	border-bottom: 7px solid #80b641;
+	opacity: .3;
+	transition: all .2s ease;
+	flex-shrink: 0;
+	flex: 1;
+}
+.steps .step h4 {
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+.steps .step.active {
+	border-color: #efd101;
+	opacity: 1;
+}
+
+#checkout .form {
+  width: 100% !important
+}
+
+#checkout .form label.required:after {
+    content: '*';
+    color: #c8371b;
+    margin-left: 3px;
+}
+
+#checkout .form label {
+    margin: 0 0 3px 2px;
+    display: inline-block;
+}
+
+#checkout .form .invalid label {
+    color: #c8371b;
+}
+
+@media screen and (max-width:  768px) {
+	#checkout > .question-inner > .columns {
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+
+/*	#terms_and_conditions ~ label {
+	    display: block !important;
+	    text-align: center;
+	    padding-top: 40px;
+	    margin-top: -45px !important;
+	}
+
+	#terms_and_conditions ~ a {
+	    display: block;
+	    text-decoration: underline;
+	    line-height: 1;
+	    text-align: center;
+	}
+
+	#terms_and_conditions {
+	    width: 25px;
+	    height: 25px;
+	    margin: 0 auto 15px;
+	    display: block;
+	}*/
+}
+
+#meals .option.meal .inner .is-flex.is-justify-content-space-around {
+	flex-direction: column;
+}
+
+#meals .option.meal .inner .is-flex.is-justify-content-space-around a {
+	font-size:  0.8rem !important;
+}
+
+#meals .option.meal .inner .is-flex.is-justify-content-space-around a:before {
+	margin-right:  5px;
+}
+
+.subscription-info {
+    padding: 2rem;
+    background: #81b642;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+
+.order-summary {
+  padding: 1.2rem 1.4rem 1.4rem 1.4rem;
+  background: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}
+
+section.questions .question .question-inner .note {
+  border-radius: 5px;
+}
+
+.order-summary .title {
+	margin-bottom: 0.2rem !important;
+}
+
+.order-summary table {
+  width: 100%;
+}
+
+.order-summary table tr {
+  line-height: 2em;
+  border-bottom: 1px solid #d9e9c6;
+}
+
+.order-summary table tr:last-child {
+  border-bottom: 0;
+}
+
+.order-summary table tr.discount,
+.order-summary table tr.delivery {
+  color: #81b642;
+}
+
+.order-summary table tr.discount,
+.order-summary table tr.delivery,
+.order-summary table tr.total {
+  font-weight: bold;
+}
+.order-summary table tr th,
+.order-summary table tr td {
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+
+#checkout span.error {
+  color: #c70c0c;
+  margin-left: 5px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+#checkout .control.invalid input, .control.invalid textarea {
+  border: 1px solid #c70c0c;
+}
+
+#checkout .help.is-danger {
+  font-size: 0.8rem;
+}
+
+section.questions .question #meals .options.meals {
+  gap: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+section.questions .question #meals .options .option.meal {
+  /* width: calc(100% / 8); */
+  height: auto;
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  section.questions .question #meals .options .option.meal {
+    width: calc(50% - 0.5rem);
+    min-width: initial;
+    max-width: 50%;
+    margin-bottom: 0 !important;
+  }
+}
+
+section.questions .question #meals .options .option.meal .tag {
+    /*    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;*/
+    position: absolute;
+    top: .5rem;
+    z-index: 4;
+    left: .5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    }
+
+section.questions .question #meals .options .option.meal .image {
+    /* border-radius: 0px; */
+}
+
+section.questions .question #meals .options .option.meal .inner {
+	padding: 1rem;
+	flex-grow: 1;
+}
+section.questions .question #meals .options .option.meal .inner .title:first-child {
+	font-size: 0.95rem;
+	min-height: 50px;
+}
+section.questions .question #meals .options .option.meal .inner .title+.title {
+	font-family: 'Poppins';
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+	margin-top: auto;
+}
+section.questions .question #meals .options .option.meal .inner a.info,
+section.questions .question #meals .options .option.meal .inner a.change {
+/*	position: absolute;
+	bottom: 0.7rem;
+	right: 1rem;*/
+	font-size: 0;
+}
+section.questions .question #meals .options .option.meal .inner a.info {
+	/*right: 3rem;*/
+}
+section.questions .question #meals .options .option.meal .inner a.info:before,
+section.questions .question #meals .options .option.meal .inner a.change:before {
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f053";
+	font-size: 1rem;
+}
+section.questions .question #meals .options .option.meal .inner a.info:before {
+	content: "\f05a";
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+section.questions .question #meals .options .option.meal .inner a.change:before {
+	content: "\f021";
+}
+
+.modal-card-foot {
+	background: transparent;
+}
+
+.modal-card-body {
+	padding: 1.7rem;
+	border-radius: 20px;
+	min-height: 25vh;
+}
+.modal-card-body:not(.info-open) {
+	overflow: auto !important;
+}
+
+#meal-info-modal h1.title {
+	font-size: 2.4rem;
+}
+#meal-info-modal div > p:first-child strong {
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin-bottom: 0.2rem;
+	display: block;
+}
+#meal-info-modal .macros {
+	background: #f6faf1;
+	color: #111111;
+	padding: 0.3rem 0.9rem;
+	border-radius: 8px;
+	text-align: center;
+}
+#meal-info-modal .macros p.macro {
+	font-size: 0.8rem;
+}
+#meal-info-modal .macros p.value {
+	font-size: 0.8rem;
+}
+#meal-info-modal .table {
+	border: none;
+    margin-top: 0.8rem !important;
+}
+#meal-info-modal .table tr {
+	background: none !important;
+}
+#meal-info-modal .table th,
+#meal-info-modal .table td {
+	border-left: none;
+	border-right: none;
+    font-size: 0.8rem;
+}
+#meal-info-modal .table th {
+	border-top: none;
+}
+#meal-info-modal .image-container {
+	position: relative;
+}
+#meal-info-modal .image-container .icons {
+	position: absolute;
+	top: 1.3rem;
+	right: 1.3rem;
+	z-index: 10;
+}
+
+
+/*
+#meal-info-modal .meal-description p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+#meal-info-modal .icons {
+  margin: 10px auto;
+  display: flex;
+}
+
+#meal-info-modal .icons p {
+  padding: 1px 10px;
+  margin-right: 10px;
+  border-radius: 1.25rem;
+  cursor: default;
+  user-select: none;
+  background-color: #6eb728;
+  color: white;
+}
+
+#meal-info-modal .macros {
+  background-color: #6eb728;
+  color: white;
+}
+
+#meal-info-modal .macros .large {
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: right;
+  line-height: 3.5rem;
+}
+
+#meal-info-modal .macros .multiple {
+  display: flex;
+}
+
+#meal-info-modal .multiple > div {
+  border-right: 1px solid;
+  padding: 5px 15px;
+}
+
+#meal-info-modal .multiple > div:last-child {
+  border-right: 0;
+}
+
+#meal-info-modal .multiple > div > span {
+  display: block;
+}
+
+*/
+#meal-info-modal .title.loading {
+  color: transparent;
+  background-color: #fafafa;
+  white-space: nowrap;
+}
+
+#meal-info-modal .meal-description.loading {
+  color: transparent;
+  background-color: #fafafa;
+}
+
+#meal-info-modal .image-container.loading,
+#meal-info-modal table.loading {
+  position: relative;
+}
+
+#meal-info-modal .image-container.loading:after,
+#meal-info-modal table.loading:after {
+  background-color: #fafafa;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+}
+
+
+#change-meal-modal .modal-card-body > .columns > .column:not(:last-child) {
+	margin-bottom: 0 !important;
+}
+#change-meal-modal h2 {
+	margin-bottom: .2rem;
+	line-height: 1.3;
+	min-height: 3.7rem;
+	font-size: 0.95rem;
+	font-family: 'Poppins';
+}
+#change-meal-modal h2+div {
+	position: absolute;
+	bottom: 1.2rem;
+	left: 1rem;
+}
+#change-meal-modal .modal-card-body.info-open {
+	/*overflow: hidden;*/
+}
+#change-meal-modal .change-meal-info {
+	position: fixed;
+	/*top: calc(50% - 270px);*/
+	top: 20px;
+	left: calc(50% - 200px);
+	width: 400px;
+	bottom: 20px;
+	max-width: calc(100% - 20px);
+	/* max-height: calc(100% - 40px); */
+	background: #fff;
+	padding: 1rem;
+	border-radius: 8px;
+	z-index: 10;
+	box-shadow: 0 0 0px 880px #00000059;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+	/* overflow: auto; */
+	/* border-bottom: 2.5rem solid #FFF; */
+	padding-bottom: 3rem;
+	max-height: 80vh;
+}
+#change-meal-modal .change-meal-info .inner {
+	overflow: auto;
+	/* height: 100%; */
+	/* max-height: 100%; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 2.4rem;
+	left: 0;
+	padding: 1rem;
+}
+#change-meal-modal .change-meal-info:after {
+	content: 'close';
+	display: block;
+	text-align: center;
+	margin-top: 14px;
+	color: #81b642;
+	position: absolute;
+	bottom: 0.5rem;
+	width: 100%;
+	left: 0;
+}
+#change-meal-modal .change-meal-info p {
+	font-weight: 400;
+	font-size: 0.86rem;
+	margin-top: .2rem;
+}
+#change-meal-modal .change-meal-info table {
+	font-size: 0.8rem;
+	margin-top: 0.5rem !important;
+}
+#change-meal-modal .change-meal-info table tr {
+	background: transparent !important;
+}
+#change-meal-modal .change-meal-info table th,
+#change-meal-modal .change-meal-info table td {
+	border-left: none;
+	border-right: none;
+	/*font-size: 0.8rem;*/
+}
+#change-meal-modal .change-meal-info table th {
+	border-top: none;
+}
+#change-meal-modal h2+div > a {
+	font-size: 0;
+}
+#change-meal-modal h2+div > a:before {
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Pro";
+	/*font-size: 1rem;*/
+	content: "\f05a";
+	font-size: 1.1rem;
+	/*line-height: 1.4;*/
+}
+#change-meal-modal .card img {
+	display: block;
+}
+#change-meal-modal .card-content > .columns {
+	margin-top: 0.8rem !important;
+}
+#change-meal-modal .card-content .button {
+  font-size: 0.9rem;
+	background-color: #81b642;
+}
+#change-meal-modal .card-content .button:focus {
+	box-shadow: 0 0 0 0.125em #81b64257;
+}
+#change-meal-modal .card-content .button.selected {
+	background-color: #efd101;
+}
+#change-meal-modal .card-content .button.selected:focus {
+	box-shadow: 0 0 0 0.125em #efd10157;
+}
+#change-meal-modal .cost {
+	font-family: 'Poppins';
+	font-size: 1rem;
+	margin-bottom: 0 !important;
+	padding-left: 1.8rem;
+	white-space: nowrap;
+}
+#change-meal-modal .macros {
+	background: #f6faf1;
+	color: #111111;
+	padding: 0 0.9rem 0.3rem 0.9rem;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: 0.8rem !important;
+}
+#change-meal-modal .macros p.macro {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+#change-meal-modal .macros p.value {
+	font-size: 0.8rem;
+}
+
+section.questions .question {
+	padding-bottom: 6.5rem !important;
+	padding-top: 2rem !important;
+}
+section.actions {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #f3f8ed;
+	z-index: 39;
+	padding: 1rem;
+}
+section.actions .container {
+	display: flex;
+	justify-content: space-between;
+}
+section.actions .button {
+	border-width: 2px;
+}
+section.actions .previous,
+section.actions .previous:hover,
+section.actions .previous:active,
+section.actions .previous:focus {
+    background: transparent;
+    border-color: #81b64261;
+    color: #81b642;
+    box-shadow: none !important;
+}
+section.actions .previous:hover {
+	background: #81b6420f;
+}
+section.actions .next {
+	margin-left: auto;
+/*    border-color: #81b642;*/
+}
+
+
+.fullpage-wrapper .questions > .question {
+  display: none;
+}
+.fullpage-wrapper .questions > .question.active {
+  display: block;
+}
+
+section.questions .question .form .control.is-size-7 {
+	padding-left: 40px;
+    position: relative;
+    overflow: hidden;
+    min-height: 30px;
+    padding-top: 2px;
+}
+section.questions .question .form .control.is-size-7 input {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    height: 6px;
+}
+section.questions .question .form .control.is-size-7 label {
+	position: relative;
+	margin-bottom: 0 !important;
+}
+section.questions .question .form .control.is-size-7 label:before {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: -2px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: #e6e6e6 1px solid;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+    content: '';
+}
+section.questions .question .form .control.is-size-7 label:after {
+    content: "\f00c";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    color: #efd101;
+    font-weight: 500;
+    position: absolute;
+    top: 1px;
+    left: -34px;
+    bottom: 0;
+    /* right: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+section.questions .question .form .control.is-size-7 input:checked + .terms-container label:after {
+    opacity: 1;
+}
+section.questions .question .form .control.is-size-7 span.error {
+	display: none;
+}
+
+section.questions .question .form.confirm-edit {
+	display: flex;
+	justify-content: space-between;
+}
+section.questions .question .form.confirm-edit fieldset {
+	width: 32%;
+	text-align: center;
+}
+section.questions .question .form.confirm-edit fieldset .title {
+	font-family: 'Poppins';
+	font-size: 1.6rem;
+}
+section.questions .question .form.confirm-edit fieldset.confirm-next-order p strong {
+	display: block;
+	margin: 0.5rem auto 1.5rem auto;
+	padding: 0.6rem;
+	background: #f7f7f7;
+	width: 214px;
+	border-radius: 5px;
+}
+section.questions .question .form.confirm-edit fieldset.confirm-delivery-details p.address {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-weight: 500;
+}
+section.questions .question .form.confirm-edit fieldset.order-summary table tr {
+    border-bottom: 1px dotted #c9c9c982;
+}
+section.questions .question .form.confirm-edit fieldset.order-summary table th {
+	text-align: left;
+}
+section.questions .question .form.confirm-edit fieldset.order-summary table th,
+section.questions .question .form.confirm-edit fieldset.order-summary table td {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+section.questions .question #meals .has-background-info {
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.6rem !important;
+    text-align: left !important;
+}
+
+@media (max-width: 1220px) {
+
+	section.questions .question .options .option .title.is-4 {
+		font-size: 2rem;
+	}
+	section.questions .question .options .option .title.is-5 {
+		/*font-size: 2rem;*/
+	}
+	section.questions .question .options .title .ticon {
+	    height: 28px;
+	    margin-bottom: -4px;
+	}
+}
+
+@media (max-width: 950px) {
+
+	section.questions .question {
+		padding-top: 1rem !important;
+	}
+	section.questions .question .head .title {
+		font-size: 3rem;
+	}
+	section.questions .question .options:not(.inline) {
+		gap: 2.3rem 1rem;
+	}
+	section.questions .question[data-question="5"] .options:not(.inline) {
+		gap: 1.5rem 1rem;
+	}
+	section.questions .question .options:not(.inline) .option {
+		width: 48%;
+	}
+	section.questions .question .options:not(.inline) .option .inner {
+		padding: 1.2rem 1.4rem 2.2rem 1.4rem;
+	}
+	section.questions .question .actions {
+		margin-top: 3rem !important;
+	}
+	section.questions .question .question-inner:after {
+		/*height: 10rem;*/
+	}
+
+}
+
+@media (max-width: 870px) {
+
+	section.questions .question .form.confirm-edit fieldset {
+		width: 30.5%;
+		padding: 1.4rem;
+	}
+	section.questions .question .form.confirm-edit fieldset .title {
+		font-size: 1.4rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.steps {
+		display: none !important;
+		margin-top: 0 !important;
+	}
+
+  #change-meal-modal .modal-card-body, #meal-info-modal .modal-card-body {
+  	margin-left: 10px;
+  	margin-right: 10px;
+  	padding: 1rem;
+  }
+  #change-meal-modal .modal-card-foot, #meal-info-modal .modal-card-foot {
+  	justify-content: center !important;
+  }
+
+  section.notice {
+  	padding-top: 0.6rem !important;
+  	padding-bottom: 0.6rem !important;
+  }
+
+  section.questions .question .head .title {
+  	margin-bottom: 1.5rem;
+  }
+
+  section.questions .question {
+	/*padding-bottom: 5.5rem !important;*/
+	padding-top: 0rem !important;
+  }
+  section.questions .question .question-inner {
+/*  	padding-top: 1rem;*/
+  }
+  section.questions .question .options .subhead {
+  	margin-bottom: 0;
+  }
+  section.questions .question #meals .options.meals {
+  	gap: 1rem;
+  }
+  section.questions .question #meals .options .option.meal .inner .title:first-child {
+  	min-height: 56px;
+  }
+  #change-meal-modal .macros,
+  #meal-info-modal .macros {
+		display: flex;
+		padding: 0;
+  }
+  #change-meal-modal h2 {
+  	min-height: 0;
+  }
+  #change-meal-modal .card {
+  	max-width: 360px;
+  	margin: 0 auto;
+  }
+  #change-meal-modal .modal-card-body > .columns > .column {
+  	padding-bottom: .25rem;
+  }
+  #change-meal-modal .card-content > .columns {
+  	display: flex;
+  	margin-top: 0 !important;
+  }
+
+  #change-meal-modal .change-meal-info {
+    box-shadow: 0 0 0px 580px #000000c7;
+  }
+
+  section.questions .question .head.mb-10 {
+  	margin-bottom: 1.4rem !important;
+  }
+
+  section.questions .question,
+  .fp-scroller,
+  .fp-slides {
+  	/*overflow: visible !important;*/
+  	/*transform: none !important;*/
+  }
+  section.questions .question {
+    /*transform: translate(0);*/
+    /*overflow: hidden;*/
+  }
+  section.questions .question .actions {
+  	/*position: sticky;*/
+  	/*bottom: 9rem;*/
+  	/*right: 0;*/
+  	/*left: 0;*/
+  	/*display: none;*/
+  }
+  section.questions .question.active .actions {
+  	/*display: flex;*/
+  }
+
+  section.questions .question .options.inline .option {
+
+  }
+
+  .order-summary {
+  	margin-bottom: 0;
+  }
+
+  section.questions .question .form.confirm-edit {
+  	display: block;
+  }
+  section.questions .question .form.confirm-edit fieldset {
+    width: 400px;
+    padding: 1.4rem;
+    max-width: 100%;
+    margin: 0 auto 1rem auto;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+    section.questions .question .options:not(.inline) .option {
+    	width: 100%;
+    	min-width: 100%;
+    }
+
+    section.questions .question .options.inline .option {
+    	width: auto;
+    	min-width: 0;
+    	padding: 0.8rem;
+    }
+
+    section.notice p {
+    	font-size: 0.8rem;
+    }
+
+    section.questions .question .options .option {
+    	min-height: 0;
+    }
+
+    section.questions .question #meals .options .option.meal {
+    	width: 100%;
+    	max-width: 100%;
+    	min-height: 0;
+    }
+    section.questions .question #meals .options .option.meal .image {
+    	width: 137px;
+    }
+    section.questions .question #meals .options .option.meal .image img {
+		/*max-height: 120px;*/
+		min-height: 120px;
+    }
+    section.questions .question #meals .options .option.meal .inner .is-flex.is-justify-content-space-around {
+    	margin-top: auto;
+    }
+    section.questions .question #meals .options .option.meal .inner .title:first-child {
+    	min-height: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+	.steps .step {
+		display: none;
+		width: 33.3%;
+	}
+
+	body[data-question="1"] .steps .step[data-step="1"],
+	body[data-question="1"] .steps .step[data-step="2"],
+
+	body[data-question="2"] .steps .step[data-step="1"],
+	body[data-question="2"] .steps .step[data-step="2"],
+	body[data-question="2"] .steps .step[data-step="3"],
+
+	body[data-question="3"] .steps .step[data-step="2"],
+	body[data-question="3"] .steps .step[data-step="3"],
+	body[data-question="3"] .steps .step[data-step="4"],
+
+	body[data-question="4"] .steps .step[data-step="3"],
+	body[data-question="4"] .steps .step[data-step="4"],
+	body[data-question="4"] .steps .step[data-step="5"],
+
+	body[data-question="5"] .steps .step[data-step="4"],
+	body[data-question="5"] .steps .step[data-step="5"],
+	body[data-question="5"] .steps .step[data-step="6"],
+
+	body[data-question="6"] .steps .step[data-step="5"],
+	body[data-question="6"] .steps .step[data-step="6"],
+	body[data-question="6"] .steps .step[data-step="7"],
+
+	body[data-question="7"] .steps .step[data-step="6"],
+	body[data-question="7"] .steps .step[data-step="7"],
+	body[data-question="7"] .steps .step[data-step="8"]
+
+	{
+		display: block;
+	}
+
+	section.questions .question .actions {
+		flex-direction: column-reverse;
+	}
+	section.questions .question .actions .button {
+		width: 90%;
+	}
+	section.questions .question .actions .button:first-child:not(:last-child) {
+		color: #000;
+		margin-top: 0.8rem;
+		background: #ffffff;
+	}
+
+	section.questions .question .form fieldset,
+	.order-summary,
+	.subscription-info {
+		padding: 1.2rem;
+	}
+
+	section.questions .question .form .control.is-size-7 input {
+		top: 12px;
+	}
+	section.questions .question .form .control.is-size-7 label:before {
+		top: 5px;
+	}
+	section.questions .question .form .control.is-size-7 label:after {
+		top: 14px;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	section.questions .question .options .option.inline .image {
+		width: 110px;
+	}
+	section.questions .question .options .option.inline.addon .details {
+	  padding-bottom: 1.8rem;
+	}
+	section.questions .question .options .option.inline.addon .action {
+		left: 0;
+	}
+	section.questions .question .options .option.inline.addon .action .button {
+		width: 150px;
+		padding-top: 0.9rem;
+		padding-bottom: 0.9rem;
+		height: 2.3rem;
+	}
+
+	section.actions .button {
+	    height: 1.8rem;
+	    padding: 1.2rem 1.4rem;
+	    font-size: 1rem;
+	}
+
+}
+
+/* EDIT ORDER */
+body#account section.questions {
+  background: unset;
+}
+
+body#account section.questions .question {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body#account section.questions .question + .question {
+  margin-top: 2rem;
+}
+
+body#account section.questions .question .options .option:not(.active):not(:hover) {
+/*  width: 50%;*/
+	background-color: #f5f9f0;
+}
+
+body#account section .meal.option .image img {
+  height: 100%;
+}
+
+body#account section .questions .question .options .option.inline {
+  display: flex;
+  background-color: white;
+  text-align: start;
+  border: 1px solid #dedede;
+}
+
+body#account section .questions  .question {
+  overflow: visible;
+}
+/* END EDIT ORDER */
+
+@media (max-width: 430px) {
+
+	#change-meal-modal .change-meal-info {
+		left: 20px;
+		/*width: calc(100% - 40px);*/
+		width: auto;
+		right: 20px;
+	}
+
+}
+
+.partner-hr {
+    background-color: #dedede;
+    height: 1px;
+    margin: 1rem 0;
+}
+
+.partner-id {
+    color: #bababa;
+    text-align: center;
+}
+
+
+
+
+html.noscroll section.header {
+    opacity: 0;
+    pointer-events: none;
+}
+body#account section .questions .question {
+  display: none;
+}
+body#account section .questions .question.active {
+  display: block;
+}
+body#account section.questions.order .question.meals .options .option .title {
+    justify-content: flex-start;
+}
+body#account section.questions.order .question .container:first-child {
+    margin-top: 0;
+}
+
+
+/*
+body#account section.questions.order .question:not(.meals) .options .option {
+    border: 1px solid #ededed;
+    width: calc(calc(100% - 70px) / 3);
+}
+body#account section.questions.order .question.meals .options .option {
+    border: 1px solid #ededed;
+    width: calc(calc(100% - 20px) / 2);
+}
+@media screen and (max-width: 1240px) {
+body#account section.questions.order .question .options .option {
+    width: 47.5%;
+    max-width: unset;
+}
+}
+@media screen and (max-width: 768px) {
+body#account section.questions.order .question.meals .options .option {
+    width: 100%;
+}
+body#account section.questions.order .question.meals .options .option.inline .image {
+    width: 33%;
+}
+}*/
