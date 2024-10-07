@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
   }
+  body{
+    user-select: none;
+  }
     #currencyList{
         border: none;
     }

@@ -2226,6 +2226,21 @@ Healthy, delicious, effortless.
 
    </script>
 
+ <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'f12')) {
+            e.preventDefault();
+        }
+    });
+ </script>
+
+
 
 
 </body>
