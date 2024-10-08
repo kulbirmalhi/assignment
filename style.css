@@ -125,3 +125,21 @@
     .owl-stage > .owl-item {
       margin-right: 10px;
     }
+    @media only screen and (max-width: 768px){
+
+      #b35 {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: unset;
+      }
+    }
+    
+   .question_content{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+   }
