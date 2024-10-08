@@ -3,6 +3,7 @@
   }
   body{
     user-select: none;
+    overflow-x: hidden;
   }
     #currencyList{
         border: none;
